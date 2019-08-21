@@ -22,22 +22,21 @@ public class Choko2 {
     private static int createChocolate(final int small, final int big, final int goal) {
         int a = goal;
         int counter = 0;
-        while (a > 0 && counter < big ) {
-                a = a - 5;
+        while (a > 0 && counter < big) {
+            a = a - 5;
 
-                counter++;
-              if (a < 0) {
-                  a += 5;
-              }
+            counter++;
+            if (a < 0) {
+                a += 5;
             }
+        }
 
-                if (small >= a){
-                    return a;
-                }
+        if (small >= a) {
+            return a;
+        }
 
 
-
-return -1;
+        return -1;
     }
 
 }
