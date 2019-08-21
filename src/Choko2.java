@@ -30,12 +30,9 @@ public class Choko2 {
                 a += 5;
             }
         }
-
         if (small >= a) {
             return a;
         }
-
-
         return -1;
     }
 
