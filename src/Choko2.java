@@ -19,21 +19,25 @@ public class Choko2 {
             System.out.println("Это невозможно выполнить при таких условиях, результат: " + result);
     }
 
-    private static int createChocolate(final int small, final int big, final int goal) {{
-        int count = 0;
-        int b = goal;
-        while (b > 4) {
-            b = b - 5;
-            count++;
-        }
-         if (count > big){
-             return -1;
-         }
-         if (small > b)
-            return b;
-         if (small < b )
-            return -1;
+    private static int createChocolate(final int small, final int big, final int goal) {
+        int a = goal;
+        int counter = 0;
+        while (a > 0 && counter < big ) {
+                a = a - 5;
+
+                counter++;
+              if (a < 0) {
+                  a += 5;
+              }
+            }
+
+                if (small >= a){
+                    return a;
+                }
+
+
+
+return -1;
     }
-    return 0;
-}
+
 }
